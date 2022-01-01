@@ -10,28 +10,26 @@ public class Student {
     private int RegNo;
     private int ClassRoom;
     private int RoomNo;
-    private String Address;
+    private String address;
     private String PhoneNo;
 
     public Student() {
-        super();
+
     }
 
-
-
     public Student(int regNo, int classRoom, int roomNo, String address, String phoneNo) {
-        RegNo = regNo;
-        ClassRoom = classRoom;
-        RoomNo = roomNo;
-        Address = address;
-        PhoneNo = phoneNo;
+        this.RegNo = regNo;
+        this.ClassRoom = classRoom;
+        this.RoomNo = roomNo;
+        this.address = address;
+        this.PhoneNo = phoneNo;
     }
     public Student( int classRoom, int roomNo, String address, String phoneNo) {
 
-        ClassRoom = classRoom;
-        RoomNo = roomNo;
-        Address = address;
-        PhoneNo = phoneNo;
+        this.ClassRoom = classRoom;
+        this.RoomNo = roomNo;
+        this.address = address;
+        this.PhoneNo = phoneNo;
     }
 
     public int getRegNo() {
@@ -39,7 +37,7 @@ public class Student {
     }
 
     public void setRegNo(int regNo) {
-        RegNo = regNo;
+        this.RegNo = regNo;
     }
 
     public int getClassRoom() {
@@ -47,7 +45,7 @@ public class Student {
     }
 
     public void setClassRoom(int classRoom) {
-        ClassRoom = classRoom;
+        this.ClassRoom = classRoom;
     }
 
     public int getRoomNo() {
@@ -55,15 +53,15 @@ public class Student {
     }
 
     public void setRoomNo(int roomNo) {
-        RoomNo = roomNo;
+        this.RoomNo = roomNo;
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        this.address = address;
     }
 
     public String getPhoneNo() {
@@ -71,7 +69,7 @@ public class Student {
     }
 
     public void setPhoneNo(String phoneNo) {
-        PhoneNo = phoneNo;
+        this.PhoneNo = phoneNo;
     }
 
     @Override
@@ -80,7 +78,7 @@ public class Student {
                 "RegNo=" + RegNo +
                 ", ClassRoom=" + ClassRoom +
                 ", RoomNo=" + RoomNo +
-                ", Address='" + Address + '\'' +
+                ", address='" + address + '\'' +
                 ", PhoneNo='" + PhoneNo + '\'' +
                 '}';
     }
